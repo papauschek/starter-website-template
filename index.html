@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll Works | Starter Template</title>
+    <title>Abenteuer-Wiese | Spielplatz der Ideen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Scroll Works</h1>
+    <nav class="navbar">
+        <div class="logo">✨ Sparky</div>
+        <ul class="nav-links">
+            <li><a href="#über">Über uns</a></li>
+            <li><a href="#projekte">Projekte</a></li>
+            <li><a href="#kontakt">Hallo sagen</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Willkommen auf der <span class="highlight">Abenteuer-Wiese!</span></h1>
+            <p>Ein magischer Ort, an dem Ideen wachsen wie bunte Blumen. 🌸</p>
+            <button class="cta-button">Lass uns spielen!</button>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape circle"></div>
+            <div class="shape square"></div>
+            <div class="shape triangle"></div>
+        </div>
     </header>
-    <main>
-        <p>This is a minimal starter template for your next website project. Lightweight, clean, and ready to expand.</p>
+
+    <main id="über">
+        <section class="card-grid">
+            <div class="card">
+                <span class="emoji">🎨</span>
+                <h3>Kreative Welt</h3>
+                <p>Wir malen die Zukunft in den buntesten Farben aus, die du dir vorstellen kannst.</p>
+            </div>
+            <div class="card">
+                <span class="emoji">🚀</span>
+                <h3>Schnelle Entdecker</h3>
+                <p>Gemeinsam fliegen wir zu den Sternen und entdecken neue Möglichkeiten.</p>
+            </div>
+            <div class="card">
+                <span class="emoji">🤝</span>
+                <h3>Freunde finden</h3>
+                <p>Teamwork macht den Traum wahr. Hier ist jeder willkommen!</p>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>Mit Liebe gemacht auf der Abenteuer-Wiese &copy; 2026</p>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
