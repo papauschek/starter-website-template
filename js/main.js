@@ -91,8 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function handleCellClick(e) {
-            const cell = e.target.closest('.ttt-cell');
-            if (!cell) return;
+            const cell = e.currentTarget;
             const idx = parseInt(cell.dataset.index);
             if (isNaN(idx) || !gameActive || gameState[idx]) return;
 
