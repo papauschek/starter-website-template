@@ -71,7 +71,6 @@ body {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    animation: bounceIn 1s ease;
 }
 
 .highlight {
@@ -109,7 +108,6 @@ body {
     position: absolute;
     opacity: 0.3;
     z-index: 0;
-    animation: float 6s infinite ease-in-out;
 }
 
 .circle { width: 100px; height: 100px; background: white; border-radius: 50%; top: 10%; left: 10%; }
@@ -140,16 +138,15 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-15px);
     border-color: var(--secondary-color);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
 .emoji {
     font-size: 3rem;
     display: block;
     margin-bottom: 20px;
-    transition: transform 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .emoji svg {
@@ -168,7 +165,7 @@ body {
 }
 
 .card:hover .emoji {
-    transform: scale(1.2) rotate(15deg);
+    opacity: 0.8;
 }
 
 /* Entdecken Section */
@@ -211,7 +208,7 @@ body {
 }
 
 .entdecken-liste li:hover {
-    transform: translateY(-5px);
+    opacity: 0.92;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
@@ -224,19 +221,6 @@ footer {
     padding: 40px;
     opacity: 0.6;
     font-size: 0.9rem;
-}
-
-/* Animations */
-@keyframes bounceIn {
-    0% { transform: scale(0.3); opacity: 0; }
-    50% { transform: scale(1.05); opacity: 1; }
-    70% { transform: scale(0.9); }
-    100% { transform: scale(1); }
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0) rotate(0); }
-    50% { transform: translateY(-30px) rotate(10deg); }
 }
 
 /* Responsiveness */
