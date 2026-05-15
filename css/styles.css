@@ -223,7 +223,7 @@ body {
 .ttt-section {
     display: block;
     max-width: 800px;
-    margin: 0 auto 50px;
+    margin: 50px auto;
     padding: 50px;
     background: var(--card-bg);
     border-radius: 30px;
@@ -233,6 +233,7 @@ body {
     opacity: 1;
     min-height: 200px;
     overflow: visible;
+    border: 3px solid var(--secondary-color);
 }
 
 .ttt-section h2 {
