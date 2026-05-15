@@ -217,6 +217,79 @@ body {
     color: var(--accent-color);
 }
 
+/* Tic-Tac-Toe */
+.ttt-section {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 50px;
+    background: var(--card-bg);
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.ttt-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.ttt-status {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.ttt-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto 20px;
+}
+
+.ttt-cell {
+    aspect-ratio: 1;
+    background: var(--secondary-color);
+    border-radius: 15px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    user-select: none;
+}
+
+.ttt-cell:hover {
+    background: #a8dbb8;
+    transform: scale(1.05);
+}
+
+.ttt-cell.x { color: var(--primary-color); }
+.ttt-cell.o { color: var(--accent-color); }
+.ttt-cell.win { background: #b8e6cc; }
+
+.ttt-reset {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.ttt-reset:hover {
+    background-color: var(--accent-color);
+}
+
 footer {
     text-align: center;
     padding: 40px;

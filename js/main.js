@@ -54,4 +54,68 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transition = 'all 0.6s ease-out';
         observer.observe(card);
     });
+
+    // 4. Tic-Tac-Toe
+    const board = document.getElementById('ttt-board');
+    const status = document.getElementById('ttt-status');
+    const resetBtn = document.getElementById('ttt-reset');
+    const cells = document.querySelectorAll('.ttt-cell');
+    let currentPlayer = 'X';
+    let gameActive = true;
+    let gameState = ['', '', '', '', '', '', '', '', ''];
+
+    const winPatterns = [
+        [0,1,2],[3,4,5],[6,7,8],
+        [0,3,6],[1,4,7],[2,5,8],
+        [0,4,8],[2,4,6]
+    ];
+
+    function checkWin() {
+        for (const [a,b,c] of winPatterns) {
+            if (gameState[a] && gameState[a] === gameState[b] && gameState[a] === gameState[c]) {
+                return { winner: gameState[a], line: [a,b,c] };
+            }
+        }
+        return null;
+    }
+
+    function handleCellClick(e) {
+        const idx = parseInt(e.target.dataset.index);
+        if (!gameActive || gameState[idx]) return;
+
+        gameState[idx] = currentPlayer;
+        e.target.textContent = currentPlayer;
+        e.target.classList.add(currentPlayer.toLowerCase());
+
+        const result = checkWin();
+        if (result) {
+            gameActive = false;
+            status.textContent = `Spieler ${result.winner} gewinnt! 🎉`;
+            result.line.forEach(i => cells[i].classList.add('win'));
+            return;
+        }
+
+        if (gameState.every(c => c)) {
+            gameActive = false;
+            status.textContent = 'Unentschieden! 🤝';
+            return;
+        }
+
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        status.textContent = `Spieler ${currentPlayer} ist dran`;
+    }
+
+    function resetGame() {
+        currentPlayer = 'X';
+        gameActive = true;
+        gameState = ['', '', '', '', '', '', '', '', ''];
+        cells.forEach(cell => {
+            cell.textContent = '';
+            cell.classList.remove('x', 'o', 'win');
+        });
+        status.textContent = 'Spieler X ist dran';
+    }
+
+    cells.forEach(cell => cell.addEventListener('click', handleCellClick));
+    resetBtn.addEventListener('click', resetGame);
 });
