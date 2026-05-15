@@ -325,7 +325,7 @@ footer {
     .hero { padding: 60px 20px; }
     .hero h1 { font-size: 2rem; }
     .card-grid { padding: 20px; }
-    .ttt-section { display: block; opacity: 1; transform: none; padding: 30px 20px; min-height: auto; }
+    .ttt-section { display: block; visibility: visible; opacity: 1; transform: none; width: 100%; box-sizing: border-box; padding: 30px 20px; min-height: auto; margin: 30px 0; }
     .ttt-board { max-width: 240px; }
     .ttt-cell { font-size: 2rem; }
 }
