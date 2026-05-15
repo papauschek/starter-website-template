@@ -49,12 +49,11 @@ body {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: var(--primary-color);
-    transform: translateY(-3px);
 }
 
 /* Hero Section */
@@ -94,12 +93,11 @@ body {
     cursor: pointer;
     font-family: var(--font-main);
     font-weight: 600;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: background-color 0.3s ease;
     box-shadow: 0 10px 20px rgba(45, 138, 84, 0.35);
 }
 
 .cta-button:hover {
-    transform: scale(1.1) rotate(-2deg);
     background-color: #1a6b3c;
 }
 
@@ -111,10 +109,10 @@ body {
 }
 
 .circle { width: 100px; height: 100px; background: white; border-radius: 50%; top: 10%; left: 10%; }
-.square { width: 80px; height: 80px; background: var(--accent-color); border-radius: 20px; bottom: 20%; right: 10%; animation-delay: 2s; }
+.square { width: 80px; height: 80px; background: var(--accent-color); border-radius: 20px; bottom: 20%; right: 10%; }
 .triangle { 
     width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; 
-    border-bottom: 86px solid var(--primary-color); top: 50%; right: 20%; animation-delay: 4s; 
+    border-bottom: 86px solid var(--primary-color); top: 50%; right: 20%; 
 }
 
 /* Main Cards */
