@@ -152,6 +152,21 @@ body {
     transition: transform 0.3s ease;
 }
 
+.emoji svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.icon-inline {
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
 .card:hover .emoji {
     transform: scale(1.2) rotate(15deg);
 }
