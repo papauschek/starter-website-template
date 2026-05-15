@@ -156,6 +156,54 @@ body {
     transform: scale(1.2) rotate(15deg);
 }
 
+/* Entdecken Section */
+.entdecken {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 50px;
+    background: var(--card-bg);
+    border-radius: 30px;
+    text-align: center;
+    border: 3px solid transparent;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.entdecken h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.entdecken p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.entdecken-liste {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.entdecken-liste li {
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #ffd1ff 100%);
+    border-radius: 15px;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+}
+
+.entdecken-liste li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.entdecken-liste li strong {
+    color: var(--accent-color);
+}
+
 footer {
     text-align: center;
     padding: 40px;
