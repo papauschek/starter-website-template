@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #7ec8a0;
-    --secondary-color: #d4f0dd;
-    --accent-color: #4a9e6f;
-    --text-color: #3a3a3a;
-    --bg-color: #f5faf7;
+    --primary-color: #2d8a54;
+    --secondary-color: #c3ecd3;
+    --accent-color: #1a6b3c;
+    --text-color: #2a2a2a;
+    --bg-color: #f0f8f2;
     --card-bg: #fff;
     --font-main: 'Fredoka', sans-serif;
 }
@@ -62,7 +62,7 @@ body {
     position: relative;
     padding: 100px 50px;
     text-align: center;
-    background: linear-gradient(135deg, var(--secondary-color) 0%, #b8e6cc 100%);
+    background: linear-gradient(135deg, #8ed4ac 0%, #1a6b3c 100%);
     border-radius: 0 0 100px 100px;
     margin-bottom: 50px;
     overflow: hidden;
@@ -96,12 +96,12 @@ body {
     font-family: var(--font-main);
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 10px 20px rgba(126, 200, 160, 0.3);
+    box-shadow: 0 10px 20px rgba(45, 138, 84, 0.35);
 }
 
 .cta-button:hover {
     transform: scale(1.1) rotate(-2deg);
-    background-color: #6abf96;
+    background-color: #1a6b3c;
 }
 
 /* Floating Shapes Animation */
@@ -189,7 +189,7 @@ body {
 .entdecken-liste li {
     padding: 15px 20px;
     margin-bottom: 12px;
-    background: linear-gradient(135deg, var(--secondary-color) 0%, #b8e6cc 100%);
+    background: linear-gradient(135deg, #8ed4ac 0%, #2d8a54 100%);
     border-radius: 15px;
     font-size: 1.05rem;
     transition: all 0.3s ease;
