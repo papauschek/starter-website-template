@@ -225,7 +225,7 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 50px;
-    background: var(--card-bg);
+    background: #eafaf0;
     border-radius: 30px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -233,7 +233,7 @@ body {
     opacity: 1;
     min-height: 200px;
     overflow: visible;
-    border: 3px solid var(--secondary-color);
+    border: 2px solid #2d8a54;
     transform: none;
 }
 
