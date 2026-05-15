@@ -234,6 +234,7 @@ body {
     min-height: 200px;
     overflow: visible;
     border: 3px solid var(--secondary-color);
+    transform: none;
 }
 
 .ttt-section h2 {

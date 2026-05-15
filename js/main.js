@@ -55,6 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
+    // Reveal ttt-section on scroll (same animation)
+    const tttSection = document.querySelector('.ttt-section');
+    if (tttSection) {
+        tttSection.style.opacity = '0';
+        tttSection.style.transform = 'translateY(20px)';
+        tttSection.style.transition = 'all 0.6s ease-out';
+        observer.observe(tttSection);
+    }
+
     // 4. Tic-Tac-Toe
     const board = document.getElementById('ttt-board');
     const status = document.getElementById('ttt-status');
